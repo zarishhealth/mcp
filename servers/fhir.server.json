@@ -1,0 +1,5 @@
+{
+  "name": "io.github.zarishhealth/fhir",
+  "description": "Read-only FHIR R5 access: search and read the resources the authenticated caller is authorised to see. Exposes no write tool.",
+  "version": "0.1.0"
+}

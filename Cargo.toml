@@ -1,0 +1,37 @@
+[workspace]
+resolver = "3"
+members = ["crates/*"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.99"
+license = "Apache-2.0"
+repository = "https://github.com/zarishhealth/mcp"
+authors = ["ZarishHealth maintainers"]
+publish = false
+
+# Every path dependency is declared here with a version as well, so no crate can
+# introduce a version wildcard that `cargo deny` would reject.
+[workspace.dependencies]
+zarish-mcp-core = { path = "crates/zarish-mcp-core", version = "0.1.0" }
+zarish-mcp-docs = { path = "crates/zarish-mcp-docs", version = "0.1.0" }
+zarish-mcp-fhir = { path = "crates/zarish-mcp-fhir", version = "0.1.0" }
+zarish-mcp-terminology = { path = "crates/zarish-mcp-terminology", version = "0.1.0" }
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+missing_debug_implementations = "warn"
+missing_docs = "warn"
+
+[workspace.lints.clippy]
+all = { level = "warn", priority = -1 }
+unwrap_used = "warn"
+expect_used = "warn"
+dbg_macro = "warn"
+todo = "warn"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+strip = true

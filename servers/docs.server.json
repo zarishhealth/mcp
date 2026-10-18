@@ -1,0 +1,5 @@
+{
+  "name": "io.github.zarishhealth/docs",
+  "description": "Search the published ZarishHealth documentation. Indexes public documentation only, never patient data or secrets.",
+  "version": "0.1.0"
+}

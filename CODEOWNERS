@@ -1,0 +1,5 @@
+# Teams are defined in BLUEPRINT.md section 5.3.
+*                         @zarishhealth/maintainers
+/crates/                  @zarishhealth/maintainers @zarishhealth/core-rust
+/servers/                 @zarishhealth/maintainers @zarishhealth/core-rust
+/scripts/                 @zarishhealth/maintainers @zarishhealth/release

@@ -1,0 +1,5 @@
+{
+  "name": "io.github.zarishhealth/terminology",
+  "description": "Code lookup over the local terminology data: what a code means, and which codes belong to a value set. Carries no patient data.",
+  "version": "0.1.0"
+}
